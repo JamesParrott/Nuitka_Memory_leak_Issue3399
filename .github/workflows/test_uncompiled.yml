@@ -22,6 +22,6 @@ jobs:
       with:
         python-version: '3.13.2'
 
-    - name: Run the compiled executable
+    - name: Run the test script using the uncompiled module
       run: |
         python proj_test.py
