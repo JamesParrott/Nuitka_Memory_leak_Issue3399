@@ -1,3 +1,5 @@
+# Andriy Bratus (c) 2025
+
 import gc
 import threading
 
