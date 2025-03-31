@@ -1,4 +1,4 @@
-name: Test_memory_leak
+name: Test_uncompiled
 
 on:
   workflow_dispatch:
