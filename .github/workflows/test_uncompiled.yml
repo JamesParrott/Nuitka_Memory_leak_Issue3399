@@ -9,7 +9,6 @@ on:
   pull_request:
     branches: 
 
-    
 jobs:
   build-and-run:
     runs-on: windows-latest
@@ -22,15 +21,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.13.2'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install nuitka==2.6.8
-
-    - name: Compile with Nuitka
-      run: |
-        python -m nuitka --module proj_lib.py
 
     - name: Run the compiled executable
       run: |
